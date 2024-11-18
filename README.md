@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/HoopReserve.png" alt="ResQnect Logo" width="290" height="260">
+  <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/HoopReserve.png" alt="HoopReserve Logo" width="290" height="260">
 
   <h1>HoopReserve</h1>
 
@@ -52,7 +52,7 @@ In building this Basketball Court Reservation System, key Python concepts were u
  
 ### Integration with SDG 🌍
 <div align="center">
-  <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/SDG%20Goal%2011.png" alt="SDG Goal 11" width="1000">
+  <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/SDG%20Goal%2011.png" alt="SDG Goal 11" width="900">
 </div>
 
 **Sustainable Development Goal (SDG) 11: Sustainable Cities and Communities** HoopReserve can effectively align with Sustainable Development Goal (SDG) 11: Sustainable Cities and Communities. SDG 11 focuses on creating inclusive, safe, resilient, and sustainable urban environments, and this system promotes inclusivity and fairness in community spaces. By enabling a clear and respectful way for individuals to reserve court time, the system helps avoid conflicts, promotes equitable access, and supports a harmonious environment where all community members have a fair opportunity to use the facilities.
@@ -65,20 +65,13 @@ Additionally, this reservation system encourages efficient resource management. 
 ### Instructions for Running the HoopReserve Basketball Court Reservation System 💻
 
 This guide provides step-by-step instructions for using the HoopReserve Basketball Court Reservation System, which allows users to register, create, update, and manage reservations for a basketball court.
-- **Starting the Program**
+- **Starting the Program** 🏁
    -	Run the program in a Python environment.
    -	Upon starting, you will see a welcome message and a main menu with the following options:
-     
- 
-      `Welcome to the Basketball Court Reservation System!`
- 
-    	`Press 1 if you want to register.`
-    	`Press 2 if you want to create a reservation.`
-    	`Press 3 if you want to update a reservation.`
-    	`Press 4 if you want to cancel a reservation.`
-    	`Press 5 if you want to print a receipt.`
-    	`Press 6 if you want to Confirm Reservation.`
-    	`Press 7 if you want to exit.`
+
+<div align="right side">
+  <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/Starting%20the%20Program.jpg" alt="Starting the Program" width="370" height="170">
+</div>
 
    - 	Enter the number corresponding to the action you want to perform.
 
@@ -86,12 +79,9 @@ This guide provides step-by-step instructions for using the HoopReserve Basketba
    -  Choose option 1 from the main menu.
    -  You will be prompted to enter:
      
-
-      `Let's register you for the basketball court reservation.`
-      
-      `Enter your full name:`
-      `Enter your contact number:`
-      `Enter your address:`
+<div align="right side">
+  <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/Starting%20the%20Program.jpg" alt="SDG Goal 11" width="370" height="170">
+</div>
 
    -	The entered details will be saved, and a confirmation message will appear.
 
