@@ -59,10 +59,105 @@ In building this Basketball Court Reservation System, key Python concepts were u
 Additionally, this reservation system encourages efficient resource management. With structured booking, court maintenance can be better planned, ensuring a clean and well-maintained space for users. This improves the sustainability of community resources and creates a safer, more enjoyable environment for everyone. By fostering respect and organization, the system supports a more inclusive and connected community, where recreational areas are thoughtfully and sustainably managed.
 
 
-This system contributes to SDG 11 in three key areas. First, it aids in **preparation** by allowing communities to track and store essential resources such as food, water, and medical supplies, ensuring quick mobilization when disaster strikes. The system's ability to maintain an updated inventory of resources helps communities be better prepared for emergencies. Second, during the **response and recovery** phases, it facilitates the assignment of tasks and the management of volunteers, ensuring that resources are deployed efficiently and volunteers can be quickly assigned to critical areas. Task tracking and real-time response monitoring ensure timely intervention in disaster-affected regions. Lastly, the system contributes to resilience building by allowing communities to track response times, resource usage, and volunteer deployment. This data helps communities improve their disaster response strategies over time.
-
  <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
 </div>
 
+### Instructions for Running the HoopReserve Basketball Court Reservation System 💻
 
+This guide provides step-by-step instructions for using the HoopReserve Basketball Court Reservation System, which allows users to register, create, update, and manage reservations for a basketball court.
+- **Starting the Program**
+ -	Run the program in a Python environment.
+ -	Upon starting, you will see a welcome message and a main menu with the following options:
  
+ -  Welcome to the Basketball Court Reservation System!
+ 
+ -	Press 1 if you want to register.
+ -	Press 2 if you want to create a reservation.
+ -	Press 3 if you want to update a reservation.
+ -	Press 4 if you want to cancel a reservation.
+ -	Press 5 if you want to print a receipt.
+ -	Press 6 if you want to Confirm Reservation.
+ -	Press 7 if you want to exit.
+
+- 	Enter the number corresponding to the action you want to perform.
+
+- **Registering a User**
+ -  Choose option 1 from the main menu.
+ -  You will be prompted to enter:
+
+ -  Let's register you for the basketball court reservation.
+      
+ -  Enter your full name:
+ -  Enter your contact number:
+ -  Enter your address:
+
+ -	The entered details will be saved, and a confirmation message will appear.
+
+- **Creating a Reservation**
+ - 	Choose option 2 to create a new reservation.
+ -	Enter the following details:
+
+ -  Let's create a reservation.
+   
+ -  Enter reservation date (yyyy-mm-dd):
+ -  Enter start time (HH:mm): 
+ -  Enter end time (HH:mm):format)
+
+ -	Your reservation will be created and saved, with details displayed for confirmation.
+
+- **Updating a Reservation**
+ - 	Choose option 3 to modify an existing reservation.
+ -  You will be prompted to enter new details. Press Enter to keep existing values:
+
+ -  Update your reservation.
+
+ -  Enter new start time (or press Enter to keep the same): 
+ -  Enter new end time (or press Enter to keep the same): 
+ -  Enter new date (or press Enter to keep the same):
+
+ -	The updated reservation details will be saved.
+
+- **Canceling a Reservation**
+ -	Choose option 4 to cancel an existing reservation.
+ -	You will be asked to confirm the cancellation. Type yes to confirm, or no to cancel the operation.
+
+ -	Are you sure you want to cancel your reservation? (yes/no):
+
+- **Printing a Receipt**
+ -	Choose option 5 to print a receipt for your reservation.
+ -	The receipt will display your details, reservation date, start time, and end time, formatted as follows:
+
+
+   --------------------------------------------
+   ------------Reservation Receipt------------
+   --------------------------------------------
+   Paharang West Basketball Court
+
+   Full Name: [User's Full Name]
+   Contact Number: [User's Contact Number]
+   Address: [User's Address]
+   Date: [Reservation Date]
+   Start Time: [Reservation Start Time]
+   End Time: [Reservation End Time]
+
+   THANK YOU FOR YOUR RESERVATION AND ENJOY!
+   -------------------------------------------
+   PAHARANG WEST BASKETBALL COURT
+   09764978219
+   pwbcc@gmail.com
+
+- **Confirming a Reservation**
+ -	Choose option 6 to save the reservation to a JSON file.
+ -	A confirmation message will be shown, and the reservation will be stored in the reservation.json file.
+
+ -	Reservation confirmed. reservation.json.
+
+- **Exiting the Program**
+ -	To exit, select option 7.
+ -	A farewell message will appear, and the program will terminate.
+
+ -	Thank you for using the reservation system! Goodbye!
+
+These steps provide an easy-to-follow guide for managing your basketball court reservations using the HoopReserve system.
+
+
