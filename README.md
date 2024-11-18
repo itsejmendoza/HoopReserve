@@ -78,68 +78,53 @@ This guide provides step-by-step instructions for using the HoopReserve Basketba
 - **Registering a User**
    -  Choose option 1 from the main menu.
    -  You will be prompted to enter:
-     
-<div align="right side">
-  <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/Starting%20the%20Program.jpg" alt="SDG Goal 11" width="370" height="170">
-</div>
 
+   <div align="right side">
+  <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/Ragister%20a%20User.jpg" alt="Register a User" width="370" height="200">
+</div>
+ 
    -	The entered details will be saved, and a confirmation message will appear.
 
 - **Creating a Reservation**
    - 	Choose option 2 to create a new reservation.
    -	Enter the following details:
-     
-
-        `Let's create a reservation.`
-   
-        `Enter reservation date (yyyy-mm-dd):`
-        `Enter start time (HH:mm):` 
-        `Enter end time (HH:mm):`
+ 
+  <div align="right side">
+  <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/Creating%20a%20Reservation.jpg" alt="Creating a Reservation" width="370" height="200">
+</div>
 
    -	Your reservation will be created and saved, with details displayed for confirmation.
 
 - **Updating a Reservation**
    - 	Choose option 3 to modify an existing reservation.
    -  You will be prompted to enter new details. Press Enter to keep existing values:
+ 
+   <div align="right side">
+  <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/Updating%20a%20Reservation.jpg" alt="Updating a Reservation" width="370" height="200">
+</div>
      
-
-        `Update your reservation.`
-
-        `Enter new start time (or press Enter to keep the same): `
-        `Enter new end time (or press Enter to keep the same):` 
-        `Enter new date (or press Enter to keep the same):`
-
    -	The updated reservation details will be saved.
 
 - **Canceling a Reservation**
    -	Choose option 4 to cancel an existing reservation.
    -	You will be asked to confirm the cancellation. Type yes to confirm, or no to cancel the operation.
-     
 
-      	`Are you sure you want to cancel your reservation? (yes/no):`
+  <div align="right side">
+  <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/Canceling%20a%20Reservation.jpg" alt="Canceling a Reservation" width="370" height="200">
+</div>
+     
 
 - **Printing a Receipt**
    -	Choose option 5 to print a receipt for your reservation.
-   -	The receipt will display your details, reservation date, start time, and end time, formatted as follows:
+   -	The receipt will display your details, reservation date, start time, and end time, 
+formatted as follows:
+
+<div align="right side">
+  <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/Canceling%20a%20Reservation.jpg" alt="Printing a Receipt" width="370" height="200">
+</div>
 
 
-     `--------------------------------------------`
-     `------------Reservation Receipt------------`
-     `--------------------------------------------`
-     `Paharang West Basketball Court`
-
-     `Full Name: [User's Full Name]`
-     `Contact Number: [User's Contact Number]`
-     `Address: [User's Address]`
-     `Date: [Reservation Date]`
-     `Start Time: [Reservation Start Time]`
-     `End Time: [Reservation End Time]`
-
-     `THANK YOU FOR YOUR RESERVATION AND ENJOY!`
-     `-------------------------------------------`
-     `PAHARANG WEST BASKETBALL COURT`
-     `09764978219`
-     `pwbcc@gmail.com`
+    
 
 - **Confirming a Reservation**
    -	Choose option 6 to save the reservation to a JSON file.
@@ -155,4 +140,15 @@ This guide provides step-by-step instructions for using the HoopReserve Basketba
 
 These steps provide an easy-to-follow guide for managing your basketball court reservations using the HoopReserve system.
 
+https://github.com/itsejmendoza/HoopReserve/blob/main/images/Ragister%20a%20User.jpg
+
+https://github.com/itsejmendoza/HoopReserve/blob/main/images/Creating%20a%20Reservation.jpg
+
+https://github.com/itsejmendoza/HoopReserve/blob/main/images/Updating%20a%20Reservation.jpg
+
+https://github.com/itsejmendoza/HoopReserve/blob/main/images/Canceling%20a%20Reservation.jpg
+
+https://github.com/itsejmendoza/HoopReserve/blob/main/images/Confirming%20a%20Reservation.jpg
+
+https://github.com/itsejmendoza/HoopReserve/blob/main/images/Exiting%20the%20Program.jpg
 
