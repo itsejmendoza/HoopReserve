@@ -20,37 +20,42 @@
   2. [Application of Python Concepts](#application-of-python-concepts)  
   3. [Integration with SDG](#integration-with-sdg)  
   4. [Running the Program](#running-the-program)
-
+  5. [Gratitude Statement](#gratitude-statementa)
 </details>
 
 ---
 
-### Project Overview 🕵🏻
+### Project Overview 
 **HoopReserve** makes reserving local basketball courts easy and fair. By allowing users to book court time in advance, it helps prevent conflicts over who gets to play, ensuring everyone has an equal opportunity. The simple booking process lets players plan their games without hassle, so they can focus on enjoying the sport. It's not just about convenience—it's about building a respectful, connected community where everyone has a fair shot at the court.
 
-### Application of Python Concepts 🐉
-In building this Basketball Court Reservation System, key Python concepts were used to make it easy and functional. Here's how they were applied:
+### Application of Python Concepts 
+The  Basketball Court Reservation System effectively illustrates core Object-Oriented Programming (OOP) principles. Below is an explanation of how these principles were applied:
 
-- **Classes and Objects (OOP Basics)** 📕
-  - I created the `User` and `Reservation` classes to represent individual users and their reservations.
-  - For managing these processes, I implemented the `ReservationManager` class to handle actions like user registration, reservation creation, updating, cancellation, and receipt generation.
-  - The `BasketballCourtReservationSystem` class serves as the main controller, integrating user registration, reservation management, and overall system navigation.
+- **Classes and Objects (OOP Basics)** 
+    - Classes serve as blueprints for creating objects, encapsulating both data and behavior. The project uses several classes to represent real-world entities in the system.
+    - User Class: Encapsulates user information (`name, contact, address`) and provides methods to interact with this data, including `to_dict` for serialization.
+    - Reservation Class: Represents a reservation with attributes like `id`, `user_name`, `start_time`, `end_time`, and date. Methods such as update and `to_dict` allow for dynamic updates and serialization.
+    - ReservationManager Class: Acts as the orchestrator of the reservation process, managing user registration, reservation creation, and system interactions.
 
+
+- **Encapsulation**
+    - Encapsulation restricts direct access to object data, exposing only necessary methods for interaction.
+    - In this project, private attributes (e.g., `_name`, `_contact`, `_id`) are used, with public getter methods (`@property`) providing controlled access.
+    - For example, the `Reservation` class provides methods like update to modify its state, avoiding direct manipulation of private attributes.
+
+
+- **Polymorphism**
+    - Polymorphism allows objects to redefine inherited behaviors.
+    - The `__str__` method is overridden in both the `User` and `Reservation` classes to provide meaningful string representations of objects. This ensures that printed objects display human-readable information tailored to their respective class.
+
+   
+- **Abstraction**
+  
+    - Abstraction hides complex logic while exposing only the necessary interfaces for interaction.
+    - The `ReservationManager` class abstracts the reservation system's operations, presenting users with intuitive methods (`register_user`, `create_reservation`, `save_reservation_to_json`) without exposing the underlying implementation details, such as file handling or object serialization.  
+    
  
-- **Encapsulation** 🩹
-  -	It refers to combining data and the functions that manipulate that data into a single unit or class, while limiting direct access to certain parts of the object’s components.
-  -	In the `User` and `Reservation` classes, I encapsulated the attributes (e.g., `name`, `contact`, `date`) and their corresponding methods. These methods control how the data is accessed and updated, preventing direct manipulation of object attributes.
-
-
-
- - **Polymorphism**  📑
-     - `update Method:` The `update` method in the `Reservation` class demonstrates polymorphism. It allows users to update any combination of `start_time`, `end_time`, and `date` independently of one another.
-
-- **Abstraction**  🗄️  
-     - ReservationManager as an Abstraction Layer: The `ReservationManager` class abstracts the complexities of managing users and reservations. It provides an easy-to-use interface for the user to interact with the system without having to worry about the underlying implementation.
-     - User-Friendly Interface: The `ReservationManager` class simplifies interactions with the reservation system. For example, the method `create_reservation` hides the complexity of creating a reservation from the user:
- 
-### Integration with SDG 🌍
+### Integration with SDG 
 <div align="center">
   <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/SDG%20Goal%2011.png" alt="SDG Goal 11" width="900">
 </div>
@@ -62,10 +67,10 @@ Additionally, this reservation system encourages efficient resource management. 
  <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
 </div>
 
-### Instructions for Running the HoopReserve Basketball Court Reservation System 💻
+### Instructions for Running the HoopReserve Basketball Court Reservation System 
 
 This guide provides step-by-step instructions for using the HoopReserve Basketball Court Reservation System, which allows users to register, create, update, and manage reservations for a basketball court.
-- **Starting the Program** 🏁
+- **Starting the Program** 
    -	Run the program in a Python environment.
    -	Upon starting, you will see a welcome message and a main menu with the following options:
    -	Enter the number corresponding to the action you want to perform.
@@ -75,7 +80,7 @@ This guide provides step-by-step instructions for using the HoopReserve Basketba
 </div>
        
 
-- **Registering a User** 👨🏻‍💼
+- **Registering a User** 
    -  Choose option 1 from the main menu.
    -  You will be prompted to enter:
    -  The entered details will be saved, and a confirmation message will appear.
@@ -86,7 +91,7 @@ This guide provides step-by-step instructions for using the HoopReserve Basketba
 </div>
  
   
-- **Creating a Reservation** 📅
+- **Creating a Reservation** 
    - 	Choose option 2 to create a new reservation.
    -	Enter the following details:
    -	Your reservation will be created and saved, with details displayed for confirmation.
@@ -96,7 +101,7 @@ This guide provides step-by-step instructions for using the HoopReserve Basketba
 </div>
 
 
-- **Updating a Reservation** 🔄
+- **Updating a Reservation** 
    - 	Choose option 3 to modify an existing reservation.
    -  You will be prompted to enter new details. Press Enter to keep existing values:
    -  The updated reservation details will be saved.
@@ -105,7 +110,7 @@ This guide provides step-by-step instructions for using the HoopReserve Basketba
   <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/Updating%20a%20Reservation.jpg" alt="Updating a Reservation" width="370" height="200">
 </div>
 
-- **Canceling a Reservation** ✖
+- **Canceling a Reservation** 
    -	Choose option 4 to cancel an existing reservation.
    -	You will be asked to confirm the cancellation. Type yes to confirm, or no to cancel the operation.
 
@@ -113,7 +118,7 @@ This guide provides step-by-step instructions for using the HoopReserve Basketba
   <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/Canceling%20a%20Reservation.jpg" alt="Canceling a Reservation" width="370" height="200">
 </div>
 
-- **Printing a Receipt** 📜
+- **Printing a Receipt** 
    -	Choose option 5 to print a receipt for your reservation.
    -	The receipt will display your details, reservation date, start time, and end time, 
 formatted as follows:
@@ -122,7 +127,7 @@ formatted as follows:
   <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/Printing%20a%20Receipt.jpg" alt="Printing a Receipt" width="370" height="200">
 </div>
 
-- **Confirming a Reservation** ✔
+- **Confirming a Reservation** 
    -	Choose option 6 to save the reservation to a JSON file.
    -	A confirmation message will be shown, and the reservation will be stored in the reservation.json file.
 
@@ -130,7 +135,7 @@ formatted as follows:
   <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/Confirming%20a%20Reservation.jpg" alt="Confirming a Reservation" width="370" height="200">
 </div>
 
-- **Exiting the Program** 🚪
+- **Exiting the Program** 
    -	To exit, select option 7.
    -	A farewell message will appear, and the program will terminate.
 
@@ -140,3 +145,9 @@ formatted as follows:
      
    -  These steps provide an easy-to-follow guide for managing your basketball court reservations using the HoopReserve system.
 
+<hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+</div>
+
+## Gratitude Statement 🫡
+
+`I want to thank God for the guidance, my family for their love, my friends for their support, and Professor Ms. Fatima Agdon for her guidance and wisdom. Thank you all for being part of this project journey.`
