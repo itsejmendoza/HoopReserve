@@ -47,7 +47,7 @@ The  Basketball Court Reservation System effectively illustrates core Object-Ori
 
 - **Polymorphism**
     - Polymorphism allows objects to redefine inherited behaviors.
-    - The `__str__` method is overridden in both the `User` and `Reservation` classes to provide meaningful string representations of objects. This ensures that printed objects display human-readable information tailored to their respective class.
+    - The `__str__` method is overridden in both the `User` and `Reservation` classes to provide meaningful string representations of objects. This ensures that printed objects display human-readable information fit for their respective class.
 
 - **Abstraction**
     - Abstraction hides complex logic while exposing only the necessary interfaces for interaction.
