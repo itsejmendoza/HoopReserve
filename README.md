@@ -26,42 +26,43 @@
 ---
 
 ### Project Overview 
-**HoopReserve** makes reserving local basketball courts easy and fair. By allowing users to book court time in advance, it helps prevent conflicts over who gets to play, ensuring everyone has an equal opportunity. The simple booking process lets players plan their games without hassle, so they can focus on enjoying the sport. It's not just about convenience—it's about building a respectful, connected community where everyone has a fair shot at the court.
+**HoopReserve** makes reserving local basketball courts easy and fair. By allowing users to book court time in advance, it helps prevent conflicts over who gets to play, ensuring everyone has an equal opportunity. The simple booking process lets players plan their games without hassle, so they can focus on enjoying the sport. It's not just about convenience—it's about building a respectful, connected community where everyone has a fair chance to use the court.
+
+ <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+</div>
 
 ### Application of Python Concepts 
 The  Basketball Court Reservation System effectively illustrates core Object-Oriented Programming (OOP) principles. Below is an explanation of how these principles were applied:
 
 - **Classes and Objects (OOP Basics)** 
     - Classes serve as blueprints for creating objects, encapsulating both data and behavior. The project uses several classes to represent real-world entities in the system.
-    - User Class: Encapsulates user information (`name, contact, address`) and provides methods to interact with this data, including `to_dict` for serialization.
-    - Reservation Class: Represents a reservation with attributes like `id`, `user_name`, `start_time`, `end_time`, and date. Methods such as update and `to_dict` allow for dynamic updates and serialization.
-    - ReservationManager Class: Acts as the orchestrator of the reservation process, managing user registration, reservation creation, and system interactions.
-
+    - User Class: Encapsulates user information (`name`, `contact`, `address`) and provides methods to interact with this data, including `to_dict` for converting it into a simple format like a dictionary.
+    - Reservation Class: Represents a reservation with attributes like `id`, `user_name`, `start_time`, `end_time`, and `date`. Methods such as update and `to_dict` allow for dynamic updates and easy conversion to a dictionary format.
+    - ReservationManager Class: Handles the reservation process, managing user registration, reservation creation, and system interactions..
 
 - **Encapsulation**
     - Encapsulation restricts direct access to object data, exposing only necessary methods for interaction.
     - In this project, private attributes (e.g., `_name`, `_contact`, `_id`) are used, with public getter methods (`@property`) providing controlled access.
-    - For example, the `Reservation` class provides methods like update to modify its state, avoiding direct manipulation of private attributes.
-
+    - For example, the Reservation class has methods like `update` to change its details without directly accessing private data.
 
 - **Polymorphism**
     - Polymorphism allows objects to redefine inherited behaviors.
     - The `__str__` method is overridden in both the `User` and `Reservation` classes to provide meaningful string representations of objects. This ensures that printed objects display human-readable information tailored to their respective class.
 
-   
 - **Abstraction**
-  
     - Abstraction hides complex logic while exposing only the necessary interfaces for interaction.
     - The `ReservationManager` class abstracts the reservation system's operations, presenting users with intuitive methods (`register_user`, `create_reservation`, `save_reservation_to_json`) without exposing the underlying implementation details, such as file handling or object serialization.  
     
+<hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+</div>
  
 ### Integration with SDG 
 <div align="center">
   <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/SDG%20Goal%2011.png" alt="SDG Goal 11" width="900">
 </div>
 
-**Sustainable Development Goal (SDG) 11: Sustainable Cities and Communities** HoopReserve can effectively align with Sustainable Development Goal (SDG) 11: Sustainable Cities and Communities. SDG 11 focuses on creating inclusive, safe, resilient, and sustainable urban environments, and this system promotes inclusivity and fairness in community spaces. By enabling a clear and respectful way for individuals to reserve court time, the system helps avoid conflicts, promotes equitable access, and supports a harmonious environment where all community members have a fair opportunity to use the facilities.
-Additionally, this reservation system encourages efficient resource management. With structured booking, court maintenance can be better planned, ensuring a clean and well-maintained space for users. This improves the sustainability of community resources and creates a safer, more enjoyable environment for everyone. By fostering respect and organization, the system supports a more inclusive and connected community, where recreational areas are thoughtfully and sustainably managed.
+**Sustainable Development Goal (SDG) 11: Sustainable Cities and Communities**  
+  HoopReserve aligns perfectly with Sustainable Development Goal (SDG) 11: Sustainable Cities and Communities. By offering a fair and respectful system for reserving basketball courts, it promotes inclusivity, prevents conflicts, and ensures everyone has equal access to community spaces. Beyond fairness, structured bookings allow for better maintenance planning, keeping courts clean, safe, and enjoyable for all. This isn’t just about convenience—it’s about fostering respect, connection, and sustainability in urban communities. HoopReserve helps create vibrant, well-managed spaces where everyone can come together and play.
  
 
  <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
