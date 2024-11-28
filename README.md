@@ -74,12 +74,12 @@ The  Basketball Court Reservation System effectively illustrates core Object-Ori
 To run the HoopReserve system, follow these steps:
 1. Clone the repository:
    ```bash
-   https://github.com/itsejmendoza/HoopReserve
+   git clone https://github.com/itsejmendoza/HoopReserve.git
 2. Navigate to the project repository:
    ```bash
    cd HoopReserve
 
-4. Run the program:
+3. Run the program:
    ```bash
    python main.py
 
