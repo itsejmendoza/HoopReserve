@@ -167,4 +167,4 @@ formatted as follows:
 
 ## Gratitude Statement 🫡
 
-`I want to thank God for the guidance, my family for their love, my friends for their support, and Professor Ms. Fatima Agdon for her guidance and wisdom. Thank you all for being part of this project journey.`
+`I want to thank God for the guidance, my family for their love, my friends for their support, and my professor, Ms. Fatima Marie P. Agdon, for her guidance and wisdom. Thank you all for being part of this project journey.`
