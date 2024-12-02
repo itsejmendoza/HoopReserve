@@ -114,7 +114,7 @@ This guide provides step-by-step instructions for using the HoopReserve Basketba
    -	Your reservation will be created and saved, with details displayed for confirmation.
 
 <div align="right side">
-  <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/Creating%20a%20Reservation.jpg" alt="Creating a Reservation" width="370" height="200">
+  <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/Creating%20a%20Reservation.jpg" alt="Creating a Reservation" width="480" height="270">
 </div>
 
 
@@ -124,7 +124,7 @@ This guide provides step-by-step instructions for using the HoopReserve Basketba
    -  The updated reservation details will be saved.
 
  <div align="right side">
-  <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/Updating%20a%20Reservation.jpg" alt="Updating a Reservation" width="370" height="200">
+  <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/Updating%20a%20Reservation.jpg" alt="Updating a Reservation" width="490" height="270">
 </div>
 
 - **Canceling a Reservation** 
@@ -141,7 +141,7 @@ This guide provides step-by-step instructions for using the HoopReserve Basketba
 formatted as follows:
 
 <div align="right side">
-  <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/Printing%20a%20Receipt.jpg" alt="Printing a Receipt" width="370" height="200">
+  <img src="https://github.com/itsejmendoza/HoopReserve/blob/main/images/Printing%20a%20Receipt.jpg" alt="Printing a Receipt" width="370" height="400">
 </div>
 
 - **Confirming a Reservation** 
