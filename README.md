@@ -54,41 +54,41 @@ The  Basketball Court Reservation System effectively illustrates core Object-Ori
     -	Class Methods (e.g., `from_dict`) operate on the class itself, not on an individual instance. They are used to create instances from external data (like a dictionary), which is useful for serialization or deserialization tasks.
 
     
-- **List and Data Management** 🗄️
+- **List and Data Management** 📋
   
     -	Lists are used to manage multiple reservations. The `ReservationManager` class uses a list (`self._reservations`) to store all reservations created during the session.
     -	You use loops and conditional statements to manage and check reservation availability, allowing the system to handle multiple reservations efficiently.
       
 
-- **File Handling and JSON Serialization**
+- **File Handling and JSON Serialization** 🗄️
   
     - File I/O is used to save reservations to a JSON file. The method `save_reservation_to_json` reads from a file and writes data in JSON format, allowing you to persist data across sessions.
     - JSON Serialization: The `to_dict()` method in both `User` and `Reservation` classes converts objects to dictionaries, making it easy to store and retrieve them in a JSON format.
       
 
-- **Input/Output and Interaction**
+- **Input/Output and Interaction** 🖥️
   
     -	User Input: The system relies on user input to gather information for registration and reservations (e.g., `input()`).
     -	Print Statements: The code uses `print()` to interact with the user, showing status messages, reservation details, and receipts.
       
 
-- **Conditionals and Loops**
+- **Conditionals and Loops** 𖦹
   
     -	If-Else Statements: The code uses `if-else` to check whether a reservation exists, validate user input, and check for availability (e.g., in `is_date_available` and `create_reservation`).
     -	While Loop: The main program runs in an infinite loop (`while True`), allowing the user to interact with the system until they choose to exit by inputting 7.
 
 
-- **Exception Handling**
+- **Exception Handling** 🕵️‍♂️
   
     -	Try-Except Blocks: The code handles errors using `try-except` to manage potential issues like file not being found or invalid JSON format. This ensures the program doesn’t crash and can recover gracefully.
 
 
-- **String Formatting**
+- **String Formatting** 📝
   
     -	The `__str__` method in both` User` and `Reservation` classes uses f-string formatting to create user-friendly output.
  
 
-- **Static Variables**
+- **Static Variables** 📊
 
     -	The `Reservation` class uses a static variable `_counter` to keep track of the reservation ID. Each new reservation gets a unique ID by incrementing this counter.
 
