@@ -32,7 +32,8 @@
 </div>
 
 ### Application of Python Concepts 🐍
-The  Basketball Court Reservation System effectively illustrates core Object-Oriented Programming (OOP) principles. Below is an explanation of how these principles were applied:
+In developing HoopReserve, several key Python concepts are applied to achieve functionality and manage data. Below are the Python concepts and how they are used in your system:
+
 
 - **Classes and Objects (OOP Basics)** 🗂️
 
