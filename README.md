@@ -41,7 +41,7 @@ The  Basketball Court Reservation System effectively illustrates core Object-Ori
     -	The ReservationManager class manages the interactions between User and Reservation objects, keeping track of existing reservations and providing user-facing methods for registration and reservation handling
 
 
-- ** Properties and Encapsulation** 🩹
+- **Properties and Encapsulation** 🩹
     
     -	The `User` and `Reservation` classes use private attributes (e.g., `self._name`, `self._contact`) to store data.
     -	Properties (`@property`) are used to allow controlled access to these private attributes. For example, the `name`, `contact`, and `address` properties in the `User` class provide read-only access to the attributes.
@@ -58,8 +58,40 @@ The  Basketball Court Reservation System effectively illustrates core Object-Ori
   
     -	Lists are used to manage multiple reservations. The `ReservationManager` class uses a list (`self._reservations`) to store all reservations created during the session.
     -	You use loops and conditional statements to manage and check reservation availability, allowing the system to handle multiple reservations efficiently.
+      
 
-   
+- **File Handling and JSON Serialization**
+  
+    - File I/O is used to save reservations to a JSON file. The method `save_reservation_to_json` reads from a file and writes data in JSON format, allowing you to persist data across sessions.
+    - JSON Serialization: The `to_dict()` method in both `User` and `Reservation` classes converts objects to dictionaries, making it easy to store and retrieve them in a JSON format.
+      
+
+- **Input/Output and Interaction**
+  
+    -	User Input: The system relies on user input to gather information for registration and reservations (e.g., `input()`).
+    -	Print Statements: The code uses `print()` to interact with the user, showing status messages, reservation details, and receipts.
+      
+
+- **Conditionals and Loops**
+  
+    -	If-Else Statements: The code uses `if-else` to check whether a reservation exists, validate user input, and check for availability (e.g., in `is_date_available` and `create_reservation`).
+    -	While Loop: The main program runs in an infinite loop (`while True`), allowing the user to interact with the system until they choose to exit by inputting 7.
+
+
+- **Exception Handling**
+  
+    -	Try-Except Blocks: The code handles errors using `try-except` to manage potential issues like file not being found or invalid JSON format. This ensures the program doesn’t crash and can recover gracefully.
+
+
+- **String Formatting**
+  
+    -	The `__str__` method in both` User` and `Reservation` classes uses f-string formatting to create user-friendly output.
+ 
+
+- **Static Variables**
+
+    -	The `Reservation` class uses a static variable `_counter` to keep track of the reservation ID. Each new reservation gets a unique ID by incrementing this counter.
+
     
 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
 </div>
