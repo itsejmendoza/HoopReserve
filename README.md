@@ -35,23 +35,31 @@
 The  Basketball Court Reservation System effectively illustrates core Object-Oriented Programming (OOP) principles. Below is an explanation of how these principles were applied:
 
 - **Classes and Objects (OOP Basics)** 🗂️
-    - Classes serve as blueprints for creating objects, encapsulating both data and behavior. The project uses several classes to represent real-world entities in the system.
-    - User Class: Encapsulates user information (`name`, `contact`, `address`) and provides methods to interact with this data, including `to_dict` for converting it into a simple format like a dictionary.
-    - Reservation Class: Represents a reservation with attributes like `id`, `user_name`, `start_time`, `end_time`, and `date`. Methods such as update and `to_dict` allow for dynamic updates and easy conversion to a dictionary format.
-    - ReservationManager Class: Handles the reservation process, managing user registration, reservation creation, and system interactions..
 
-- **Encapsulation** 🩹
-    - Encapsulation restricts direct access to object data, exposing only necessary methods for interaction.
-    - In this project, private attributes (e.g., `_name`, `_contact`, `_id`) are used, with public getter methods (`@property`) providing controlled access.
-    - For example, the Reservation class has methods like `update` to change its details without directly accessing private data.
+    -	Classes are used to represent the main entities in the system: `User`, `Reservation`, and `ReservationManager.`
+    - Each class has attributes (such as `name`,` contact`, `start_time`, `end_time`) and methods (such as `__init__`, `create_reservation`, `update_reservation`) that define its behavior.
+    -	The ReservationManager class manages the interactions between User and Reservation objects, keeping track of existing reservations and providing user-facing methods for registration and reservation handling
 
-- **Polymorphism** 📄
-    - Polymorphism allows objects to redefine inherited behaviors.
-    - The `__str__` method is overridden in both the `User` and `Reservation` classes to provide meaningful string representations of objects. This ensures that printed objects display human-readable information fit for their respective class.
 
-- **Abstraction** 🗄️
-    - Abstraction hides complex logic while exposing only the necessary interfaces for interaction.
-    - The `ReservationManager` class abstracts the reservation system's operations, presenting users with intuitive methods (`register_user`, `create_reservation`, `save_reservation_to_json`) without exposing the underlying implementation details, such as file handling or object serialization.  
+- ** Properties and Encapsulation** 🩹
+    
+    -	The `User` and `Reservation` classes use private attributes (e.g., `self._name`, `self._contact`) to store data.
+    -	Properties (`@property`) are used to allow controlled access to these private attributes. For example, the `name`, `contact`, and `address` properties in the `User` class provide read-only access to the attributes.
+    -	This ensures that users cannot directly modify attributes like `self._name` from outside the class, thus protecting the integrity of the data.
+
+
+- **Class Methods and Instance Methods** 📄
+  
+    - Instance Methods (e.g., `__init__`, `update_reservation`) define behavior that operates on individual instances of the class.
+    -	Class Methods (e.g., `from_dict`) operate on the class itself, not on an individual instance. They are used to create instances from external data (like a dictionary), which is useful for serialization or deserialization tasks.
+
+    
+- **List and Data Management** 🗄️
+  
+    -	Lists are used to manage multiple reservations. The `ReservationManager` class uses a list (`self._reservations`) to store all reservations created during the session.
+    -	You use loops and conditional statements to manage and check reservation availability, allowing the system to handle multiple reservations efficiently.
+
+   
     
 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
 </div>
